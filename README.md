@@ -1,4 +1,4 @@
-#### xframe-eval
+### xframe-eval
 ---
 
 xframe-eval is java library for evaluating simple mathematical expressions. supports simple exprssions and exprssions with variables.
@@ -12,17 +12,17 @@ String exprStr1 = "2 * 1 + 1";
 //with variables
 String exprStr2 = "a * b + c"
 Variables vars = new Variables(){
-		public double get(String name) {
-			switch(name) {
-			case "a":
-				return 2;
-			case "b":
-				return 1;
-			case "c":
-				return 1;
-			}
-			return 0;
-		}
+  public double get(String name) {
+      switch(name) {
+      case "a":
+        return 2;
+      case "b":
+	return 1;
+      case "c":
+        return 1;
+      }
+      return 0;
+  }
 }
 3 == Evaluator.eval(exprStr2, vars);
 
