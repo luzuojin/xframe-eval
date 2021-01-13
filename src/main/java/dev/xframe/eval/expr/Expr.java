@@ -10,7 +10,7 @@ public interface Expr {
 		return (long) eval(vars);
 	}
 	
-	default long evalAsInt(Variables vars) {
+	default int evalAsInt(Variables vars) {
 		return (int) eval(vars);
 	}
 
