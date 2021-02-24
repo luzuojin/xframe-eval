@@ -29,8 +29,8 @@ public class EvalTest {
 	
 	@Test
 	public void testVars1() {
-		String expr = "a*b+c";
-		Assert.assertTrue(3 == Evaluator.eval(expr, vars));
+		String expr = "-(a*b+c)";
+		Assert.assertTrue(-3 == Evaluator.eval(expr, vars));
 	}
 	
 	@Test

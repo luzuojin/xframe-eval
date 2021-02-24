@@ -12,7 +12,7 @@ public class NegExpr implements Expr {
 
 	@Override
 	public double eval(Variables vars) {
-		return child.eval(vars);
+		return -child.eval(vars);
 	}
 	
 	@Override
